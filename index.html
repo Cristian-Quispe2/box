@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box model</title>
+    <style>
+        body {
+            background-color: #9fc0cae1;
+        }
+
+        .caja {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 500px;
+            height: 200px;
+            background-image: url(bandera.jpg);
+            background-size: cover;
+            background-position: center;
+            color: rgb(255, 255, 255);
+            margin: auto;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .content-box {
+            width: 1200px;
+            padding: 20px;
+            border: 5px solid blue;
+            box-sizing: content-box;
+            /* Valor por defecto */
+            background-color: lightblue;
+            margin: 10px;
+        }
+
+        .boton {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 5px;
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            width: 300px;
+        }
+
+        .imagen {
+            display: inline-block;
+            width: 300px;
+            height: 300px;
+            margin: 5px;
+            background-color: #60a5ff;
+            text-align: center;
+            line-height: 100px;
+            /* Centrar texto verticalmente */
+        }
+
+        img {
+            border: 1px solid #25a7e4;
+            border-radius: 4px;
+            padding: 5px;
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+<h1 class="caja">Paises latinoamericanos</h1>
+
+<body>
+    <p class="content-box">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam ducimus amet eveniet alias rem corporis, laborum
+        quisquam deserunt accusamus deleniti ut esse at assumenda facilis quo molestiae voluptatibus error neque?
+    </p>
+    <iframe width="560" height="315"  src="https://www.youtube.com/embed/PNZRGK3ktZQ?si=IqrjdNexylwS_xG_"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<p></p>
+    <a href="#" class="boton">Bolivia</a>
+    <a href="#" class="boton">Chile</a>
+    <a href="#" class="boton">Peru</a>
+    <p></p>
+    <div class="imagen"><img src="lapaz.jpg" alt=""></div>
+    <div class="imagen"><img src="peru.jpg" alt=""></div>
+    <div class="imagen"><img src="chile.jpg" alt=""></div>
+
+
+</body>
+
+</html>
